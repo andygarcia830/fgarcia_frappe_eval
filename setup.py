@@ -10,7 +10,7 @@ setup(
 	name="fgarcia_frappe_eval",
 	version=version,
 	description="Gym Management System",
-	author="Andy Garcia",
+	author="Fernando Garcia",
 	author_email="andy@xurpas.com",
 	packages=find_packages(),
 	zip_safe=False,

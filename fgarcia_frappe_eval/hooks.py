@@ -2,7 +2,7 @@ from . import __version__ as app_version
 
 app_name = "fgarcia_frappe_eval"
 app_title = "FGarcia Frappe Eval"
-app_publisher = "Andy Garcia"
+app_publisher = "Fernando Garcia"
 app_description = "Gym Management System"
 app_email = "andy@xurpas.com"
 app_license = "MIT"
