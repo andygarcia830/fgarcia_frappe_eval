@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include fgarcia_frappe_eval *.css
+recursive-include fgarcia_frappe_eval *.csv
+recursive-include fgarcia_frappe_eval *.html
+recursive-include fgarcia_frappe_eval *.ico
+recursive-include fgarcia_frappe_eval *.js
+recursive-include fgarcia_frappe_eval *.json
+recursive-include fgarcia_frappe_eval *.md
+recursive-include fgarcia_frappe_eval *.png
+recursive-include fgarcia_frappe_eval *.py
+recursive-include fgarcia_frappe_eval *.svg
+recursive-include fgarcia_frappe_eval *.txt
+recursive-exclude fgarcia_frappe_eval *.pyc
