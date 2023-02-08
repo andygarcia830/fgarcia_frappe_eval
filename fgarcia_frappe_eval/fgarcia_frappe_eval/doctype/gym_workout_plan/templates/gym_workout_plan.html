@@ -1,0 +1,19 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2>{{ title }}</h2>
+
+<div class="col-sm">
+    <div class="card" style="width:18rem">
+        <div class="card-body">
+            <h3 class="card-title">EXERCISES:</h3>
+            {% for item in  doc.exercise_list %}
+            <p class="card-text">{{ item.exercise }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->
