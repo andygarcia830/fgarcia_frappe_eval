@@ -1,0 +1,21 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2>CLASS</h2>
+<div class="col-sm">
+    <div class="card" style="width:18rem">
+        <div class="card-body">
+            <h3 class="card-title">DETAILS:</h3>
+            
+            <h5 class="card-text">TYPE: {{ doc.type }}</h5>
+            <p class="card-text">INSTRUCTOR: {{ doc.instructor }}</p>         
+            <p class="card-text">DATE: {{ doc.schedule }}</p>         
+            <p class="card-text">DURATION: {{ doc.duration_hrs }} hrs</p>         
+            <p class="card-text">SLOTS: {{ doc.available_slots }}</p>         
+
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

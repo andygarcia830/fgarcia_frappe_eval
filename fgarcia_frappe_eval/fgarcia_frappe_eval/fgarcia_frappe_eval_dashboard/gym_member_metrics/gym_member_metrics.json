@@ -1,0 +1,29 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Gym Member Metrics - WEIGHT",
+   "width": "Full"
+  },
+  {
+   "chart": "Gym Member Metrics - BODY FAT PERCENTAGE",
+   "width": "Full"
+  },
+  {
+   "chart": "Gym Member Metrics - BMI",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-02-11 16:05:08.243847",
+ "dashboard_name": "Gym Member Metrics",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-02-11 17:15:05.871900",
+ "modified_by": "Administrator",
+ "module": "FGarcia Frappe Eval",
+ "name": "Gym Member Metrics",
+ "owner": "Administrator"
+}

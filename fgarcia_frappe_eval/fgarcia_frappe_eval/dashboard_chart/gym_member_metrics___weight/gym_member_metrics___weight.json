@@ -1,0 +1,43 @@
+{
+ "chart_name": "Gym Member Metrics - WEIGHT",
+ "chart_type": "Report",
+ "creation": "2023-02-11 16:03:58.189214",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"type\":\"WEIGHT IN KG\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2023-02-11 16:32:07.158647",
+ "modified_by": "Administrator",
+ "module": "FGarcia Frappe Eval",
+ "name": "Gym Member Metrics - WEIGHT",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Gym Member Metric",
+ "roles": [
+  {
+   "role": "Gym Member"
+  },
+  {
+   "role": "Gym Admin"
+  },
+  {
+   "role": "Gym Trainer"
+  }
+ ],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "date_taken",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "metric_value"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "creation": "2023-02-11 16:22:35.315498",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"type\":\"WEIGHT IN KG\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Average Metrics",
+ "modified": "2023-02-11 16:22:35.344823",
+ "modified_by": "Administrator",
+ "module": "FGarcia Frappe Eval",
+ "name": "Average Metrics",
+ "owner": "Administrator",
+ "report_field": "metric_value",
+ "report_function": "Average",
+ "report_name": "Gym Member Metric",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

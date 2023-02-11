@@ -1,0 +1,51 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<h1>{{ title }}</h1>
+
+
+<div class="col-mid">
+    <div class="card" style="width:30rem">
+        <div class="card-body">
+            <h3 class="card-title">MEMBER:</h3>
+
+            {% set user=frappe.get_doc('User',doc.name) %}
+            {% set days_left=0 %}
+            {% if doc.subscription_start %}
+            {% set days_left = (doc.subscription_start - doc.subscription_end).days +1 %}
+            {%endif %}
+            <p class="card-text">NAME: {{user.full_name}}</p>
+            <p class="card-text">GENDER: {{user.gender}}</p>
+            <p class="card-text">MEMBER SINCE: {{doc.join_date}}</p>
+            <p class="card-text">STATUS: {{doc.status}}</p>
+            <p class="card-text">SUBSCRIPTION: {{doc.subscription}}</p>
+            <p class="card-text">DAYS LEFT IN SUBSCRIPTION: {{days_left}}</p>
+
+            {% set classes=frappe.get_list('Gym Class Booking',filters={
+                'gym_member': doc.name,
+                },
+                fields=['gym_class']
+            ) %}
+            <h3 class="card-title">CLASSES BOOKED:</h3>
+            {% for item2 in  classes%}
+            <p class="card-text">{{ item2.gym_class }}</p>
+            {% endfor %}
+
+            {% set trainers=frappe.get_list('Gym Trainer Booking',filters={
+                'gym_member': doc.name,
+                },
+                fields=['gym_trainer','start_date_and_time']
+            ) %}
+            <h3 class="card-title">TRAINERS BOOKED:</h3>
+            {% for item in  trainers%}
+            {% set trainer=frappe.get_doc('User',item.gym_trainer) %}
+            <p class="card-text">{{ trainer.full_name }} ({{trainer.mobile_no}}) ON {{item.start_date_and_time}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

@@ -1,0 +1,37 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Gym Membership Revenue Report",
+   "width": "Full"
+  },
+  {
+   "chart": "Gym Class Booking - SPINNING",
+   "width": "Half"
+  },
+  {
+   "chart": "Gym Class Booking - BOXING",
+   "width": "Half"
+  },
+  {
+   "chart": "Gym Class Booking - YOGA",
+   "width": "Half"
+  },
+  {
+   "chart": "Gym Class Booking - ZUMBA",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-02-11 17:16:09.154143",
+ "dashboard_name": "Gym Revenue And Engagement",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-02-11 17:30:51.619151",
+ "modified_by": "Administrator",
+ "module": "FGarcia Frappe Eval",
+ "name": "Gym Revenue And Engagement",
+ "owner": "Administrator"
+}
