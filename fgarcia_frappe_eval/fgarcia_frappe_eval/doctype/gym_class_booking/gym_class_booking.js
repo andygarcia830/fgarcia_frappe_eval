@@ -10,13 +10,29 @@ frappe.ui.form.on("Gym Class Booking", {
             gym_member:frm.doc.gym_member
         },
         callback:function(r){
-            console.log("GOT DATETIME"+r.message)
-            frm.doc.start_date_and_time=r.message
+            let overlap=0
+            overlap = parseInt(r.message);
+            if (overlap == 2) {
+                frappe.validated=false
+                frappe.throw(__("Class is fully booked"));
+            }
+            if (overlap == 1) {
+                frappe.validated=false
+                frappe.throw(__("Memeber is already booked for that class"));
+            }
+            
         },
        
         });
         
 
     },
+
+    refresh(frm){
+        let is_allowed = frappe.user_roles.includes('Gym Manager') || frappe.user_roles.includes('Administrator') || frappe.user_roles.includes('Gym Trainer') ;
+        if (!is_allowed) frm.set_value('gym_member',frappe.session.user)
+        frm.toggle_enable(['gym_member'], is_allowed);
+    },
+
 
  });

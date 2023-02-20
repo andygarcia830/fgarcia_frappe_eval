@@ -26,11 +26,6 @@ def validate(name,gym_locker,start_date,end_date):
 		delta = (earliest_end - latest_start).days + 1
 		overlap = max(0, delta)
 		print(f'LOCKER BOOKING {overlap}')
-		if overlap > 0:
-			# BUGGY! STILL SAVES AFTER THROWN EXCEPTION AND THE MESSAGE IS NOT DISPLAYED ON THE ERROR DIALOG BOX
-			#msg = f'Locker {gym_locker} is already booked for that date range'
-			#frappe.throw(msg)
-			return overlap
-	return 0
+	return overlap
 		
 

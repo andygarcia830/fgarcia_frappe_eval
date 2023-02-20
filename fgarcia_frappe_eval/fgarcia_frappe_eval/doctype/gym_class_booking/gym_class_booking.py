@@ -12,8 +12,9 @@ def validate(name,gym_class,gym_member):
 	docList=frappe.db.get_list('Gym Class Booking',filters={'gym_class':gym_class,'gym_member':gym_member},fields=['name'])
 	for item in docList:
 		# BUGGY! STILL SAVES AFTER THROWN EXCEPTION AND THE MESSAGE IS NOT DISPLAYED ON THE ERROR DIALOG BOX
-		msg = f'Gym Member is already booked for that class!'
-		frappe.throw(msg)
+		#msg = f'Gym Member is already booked for that class!'
+		#frappe.throw(msg)
+		return 1
 	docList=frappe.db.get_list('Gym Class Booking',filters={'gym_class':gym_class},fields=['name'])
 	count=len(docList)
 	print(f'CLASS BOOKINGS={count}')
@@ -21,6 +22,8 @@ def validate(name,gym_class,gym_member):
 	print(f'AVAILABE SLOTS:{docList[0].available_slots}')
 	if(count >= docList[0].available_slots):
 		# BUGGY! STILL SAVES AFTER THROWN EXCEPTION AND THE MESSAGE IS NOT DISPLAYED ON THE ERROR DIALOG BOX
-		msg = f'Class is fully booked!'
-		frappe.throw(msg)
+		#msg = f'Class is fully booked!'
+		#frappe.throw(msg)
+		return 2
+	return 0
 	

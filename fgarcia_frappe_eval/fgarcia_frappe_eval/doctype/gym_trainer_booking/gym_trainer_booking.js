@@ -13,11 +13,26 @@ frappe.ui.form.on("Gym Trainer Booking", {
         },
         callback:function(r){
             console.log("GOT DATETIME"+r.message)
+            let overlap=0
+            try {
+                overlap = parseInt(r.message);
+                if (overlap == 1) {
+                    frappe.validated=false
+                    frappe.throw(__("Trainer is already booked for that date range"));
+                }
+            }catch (Exception){}
             frm.doc.start_date_and_time=r.message
         },
        
         });
 
+    },
+
+    refresh(frm){
+
+        let is_allowed = frappe.user_roles.includes('Gym Manager') || frappe.user_roles.includes('Administrator')  || frappe.user_roles.includes('Gym Trainer') ;
+        if (!is_allowed) frm.set_value('gym_member',frappe.session.user)
+        frm.toggle_enable(['gym_member'], is_allowed);
     },
 
 });

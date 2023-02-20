@@ -40,6 +40,9 @@ app_license = "MIT"
 # application home page (will override Website Settings)
 # home_page = "login"
 
+
+website_catch_all = "not_found"
+
 # website user home page (by Role)
 # role_home_page = {
 #	"Role": "home_page"
@@ -49,7 +52,7 @@ app_license = "MIT"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Gym Workout Plan","Gym Member","Gym Class"]
 
 # Jinja
 # ----------
@@ -113,23 +116,33 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
+
 # scheduler_events = {
-#	"all": [
-#		"fgarcia_frappe_eval.tasks.all"
-#	],
-#	"daily": [
-#		"fgarcia_frappe_eval.tasks.daily"
-#	],
-#	"hourly": [
-#		"fgarcia_frappe_eval.tasks.hourly"
-#	],
-#	"weekly": [
-#		"fgarcia_frappe_eval.tasks.weekly"
-#	],
-#	"monthly": [
-#		"fgarcia_frappe_eval.tasks.monthly"
-#	],
+#     "cron":{
+#         "* * * * *":[
+#             "fgarcia_frappe_eval.tasks.weekly"
+#         ]
+#     }
+
 # }
+
+scheduler_events = {
+	# "all": [
+	# 	"fgarcia_frappe_eval.tasks.all"
+	# ],
+	# "daily": [
+	# 	"fgarcia_frappe_eval.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"fgarcia_frappe_eval.tasks.hourly"
+	# ],
+	"weekly": [
+		"fgarcia_frappe_eval.tasks.weekly"
+	],
+	# "monthly": [
+	# 	"fgarcia_frappe_eval.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
@@ -190,3 +203,9 @@ app_license = "MIT"
 # auth_hooks = [
 #	"fgarcia_frappe_eval.auth.validate"
 # ]
+
+fixtures = [
+    # export only those records that match the filters from the Role table
+    {"dt": "Role", "filters": [["role_name", "like", "Gym%"]]},
+	{"dt": "Module Profile", "filters": [["module_profile_name", "like", "Gym%"]]},
+]

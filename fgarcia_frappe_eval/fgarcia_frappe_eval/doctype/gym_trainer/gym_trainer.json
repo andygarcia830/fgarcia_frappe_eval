@@ -8,18 +8,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "user",
   "first_name",
   "last_name",
   "mobile_no",
   "email_address",
+  "column_break_hbcm",
   "location",
   "gender",
   "birth_date",
-  "column_break_hbcm",
-  "subscription",
   "join_date",
   "status",
-  "user"
+  "expertise_section",
+  "expertise"
  ],
  "fields": [
   {
@@ -78,12 +79,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "subscription",
-   "fieldtype": "Table",
-   "label": "Expertise",
-   "options": "Gym Trainer Expertise"
-  },
-  {
    "fieldname": "join_date",
    "fieldtype": "Date",
    "label": "Join Date",
@@ -102,11 +97,23 @@
    "label": "User",
    "options": "User",
    "unique": 1
+  },
+  {
+   "fieldname": "expertise_section",
+   "fieldtype": "Section Break",
+   "label": "Expertise"
+  },
+  {
+   "fieldname": "expertise",
+   "fieldtype": "Table",
+   "label": "Expertise",
+   "no_copy": 1,
+   "options": "Gym Trainer Expertise"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-08 10:44:50.190831",
+ "modified": "2023-02-10 10:23:44.093411",
  "modified_by": "Administrator",
  "module": "FGarcia Frappe Eval",
  "name": "Gym Trainer",

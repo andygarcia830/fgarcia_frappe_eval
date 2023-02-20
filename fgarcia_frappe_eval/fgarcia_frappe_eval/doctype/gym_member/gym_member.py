@@ -3,19 +3,8 @@
 # 
 
 import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
-class GymMember(Document):
+class GymMember(WebsiteGenerator):
 	pass
 
-
-@frappe.whitelist()
-def set_role(email_address):
-	user = frappe.get_doc("User",email_address)
-	print(f'\n\n{user.first_name}')
-	user.append('roles',{
-				"doctype": "Has Role",
-				"role":"Gym Member"
-				})
-	#user.role_profile_name = self.user_rol
-	#user.save(ignore_permissions=True)

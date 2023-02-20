@@ -13,6 +13,16 @@ class GymTrainerBooking(Document):
 	pass
 
 
+@frappe.whitelist() 
+def get_roles(email):
+	email=frappe.session.user
+	roles = frappe.get_roles(email)
+	print(f'\n\nROLES={roles}\n\n')
+	for item in roles:
+		if item == 'Gym Admin': return 'ADMIN'
+	return 'USER'
+
+
 
 @frappe.whitelist()
 def validate(name,gym_trainer,start_date_and_time,duration_in_hours):
@@ -36,9 +46,9 @@ def validate(name,gym_trainer,start_date_and_time,duration_in_hours):
 			overlap = 1
 		print(f'TRAINER BOOKING {overlap}')
 		if overlap > 0:
-			# BUGGY! STILL SAVES AFTER THROWN EXCEPTION AND THE MESSAGE IS NOT DISPLAYED ON THE ERROR DIALOG BOX
-			msg = f'Trainer is already booked for that date range'
-			frappe.throw(msg)
+			#msg = f'Trainer is already booked for that date range'
+			#frappe.throw(msg)
+			return 1
 	dateStr=str(start_date.year)+'-'
 	if start_date.month < 10: dateStr += '0'
 	dateStr+=str(start_date.month)+'-'

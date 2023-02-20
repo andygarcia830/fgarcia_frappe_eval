@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{type}-{schedule}",
  "creation": "2023-02-06 15:26:48.606437",
@@ -12,7 +13,10 @@
   "instructor",
   "schedule",
   "duration_hrs",
-  "available_slots"
+  "available_slots",
+  "route",
+  "published",
+  "amended_from"
  ],
  "fields": [
   {
@@ -52,11 +56,35 @@
    "fieldtype": "Int",
    "label": "Available Slots",
    "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Class",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-02-07 00:57:22.321463",
+ "modified": "2023-02-10 18:18:49.875083",
  "modified_by": "Administrator",
  "module": "FGarcia Frappe Eval",
  "name": "Gym Class",
@@ -76,6 +104,7 @@
    "write": 1
   }
  ],
+ "route": "classes",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

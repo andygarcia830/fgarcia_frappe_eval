@@ -17,13 +17,13 @@
    "in_list_view": 1,
    "label": "Expertise",
    "no_copy": 1,
-   "options": "WIGHT TRAINING\nBOXING\nYOGA\nZUMBA"
+   "options": "WEIGHT TRAINING\nBOXING\nYOGA\nZUMBA"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-02-08 10:44:20.549630",
+ "modified": "2023-02-10 10:16:01.103746",
  "modified_by": "Administrator",
  "module": "FGarcia Frappe Eval",
  "name": "Gym Trainer Expertise",

@@ -16,9 +16,8 @@
         callback:function(r){
             let overlap=0
             overlap = parseInt(r.message);
-            //console.log("OVERLAP="+overlap)
-            // BUGGY! STILL SAVES AFTER THROWN EXCEPTION AND THE MESSAGE IS NOT DISPLAYED ON THE ERROR DIALOG BOX
             if (overlap > 0) {
+                frappe.validated=false
                 frappe.throw(__("Locker is already booked for that date range"));
             }
         
@@ -28,5 +27,10 @@
 
     },
 
-  
+    refresh(frm){
+        frm.set_value('gym_member',frappe.session.user)
+        let is_allowed = frappe.user_roles.includes('Gym Manager') || frappe.user_roles.includes('Administrator') ;
+        frm.toggle_enable(['gym_member'], is_allowed);
+    },
+
  });

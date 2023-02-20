@@ -6,6 +6,9 @@ from datetime import timedelta
 def weekly():
     email_class_report()
 
+def daily():
+    update_membership_status()
+
 
 def email_class_report():
     # generate dates for the start and end of the past week
@@ -45,3 +48,17 @@ def email_class_report():
             "subject": subject
             }
         frappe.sendmail(email_args)
+
+
+def update_membership_status():
+    result = frappe.get_list('Gym Member')
+    now_date = datetime.now().date()
+    for item in result:
+        if item.subscription_end == None or item.subscription_start == None: continue
+        if item.subscription_end < now_date:
+            print(f'Subscription Ended! {item.name} {item.subscription}')
+            item.subsciption=None
+            item.subscription_start=None
+            item.subscription_end=None
+            item.status='INACTIVE'
+            item.submit()
