@@ -1,0 +1,237 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"-68Az_v_l5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Revenue And Engagement\",\"col\":3}},{\"id\":\"Hq1z-Srdr-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Gym Membership Purchase\",\"col\":3}},{\"id\":\"s0X4kDt0Fr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WMFnUWjQU5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Locker Booking\",\"col\":3}},{\"id\":\"U46ZSbg5Y5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Trainer Booking\",\"col\":3}},{\"id\":\"cj9yqFu8se\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Class Booking\",\"col\":3}},{\"id\":\"Ogectg98cV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Submit Trainer Rating\",\"col\":3}},{\"id\":\"LmiYnZSnsT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Log Body Metric\",\"col\":3}},{\"id\":\"KajCsNrXLE\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"enN3k6AUUj\",\"type\":\"card\",\"data\":{\"card_name\":\"Links\",\"col\":4}},{\"id\":\"REjxreRv_E\",\"type\":\"card\",\"data\":{\"card_name\":\"Booking\",\"col\":4}},{\"id\":\"uAp1onKi5b\",\"type\":\"card\",\"data\":{\"card_name\":\"Body Metric\",\"col\":4}},{\"id\":\"UhcAWjisUH\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"auRspxx4T4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Member Metric Charts\",\"col\":3}},{\"id\":\"zfWoOLfygf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Member Metric Report\",\"col\":3}}]",
+ "creation": "2023-02-06 10:36:48.196533",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Gym Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Booking",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Class Booking",
+   "link_count": 0,
+   "link_to": "Gym Class Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Locker Booking",
+   "link_count": 0,
+   "link_to": "Gym Locker Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Trainer Booking",
+   "link_count": 0,
+   "link_to": "Gym Trainer Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Links",
+   "link_count": 9,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Settings",
+   "link_count": 0,
+   "link_to": "Gym Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Member",
+   "link_count": 0,
+   "link_to": "Gym Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Trainer",
+   "link_count": 0,
+   "link_to": "Gym Trainer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Admin",
+   "link_count": 0,
+   "link_to": "Gym Admin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Class",
+   "link_count": 0,
+   "link_to": "Gym Class",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Locker",
+   "link_count": 0,
+   "link_to": "Gym Locker",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Membership",
+   "link_count": 0,
+   "link_to": "Gym Membership",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Trainer Expertise",
+   "link_count": 0,
+   "link_to": "Gym Trainer Expertise",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Workout Plan",
+   "link_count": 0,
+   "link_to": "Gym Workout Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Body Metrics",
+   "link_count": 0,
+   "link_to": "Gym Member Metric",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-21 14:54:26.366978",
+ "modified_by": "Administrator",
+ "module": "FGarcia Frappe Eval",
+ "name": "Gym Management",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Log Body Metric",
+   "link_to": "Gym Member Metric",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Locker Booking",
+   "link_to": "Gym Locker Booking",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Member Metric Charts",
+   "link_to": "Gym Member Metrics",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Member Metric Report",
+   "link_to": "Gym Member Metric",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Trainer Booking",
+   "link_to": "Gym Trainer Booking",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Submit Trainer Rating",
+   "link_to": "Gym Trainer Rating",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Revenue And Engagement",
+   "link_to": "Gym Revenue And Engagement",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Gym Membership Purchase",
+   "link_to": "Gym Membership Purchases",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Class Booking",
+   "link_to": "Gym Class Booking",
+   "type": "DocType"
+  }
+ ],
+ "title": "Gym Management"
+}
